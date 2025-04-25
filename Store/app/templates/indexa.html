@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba</title>
+</head>
+<body>
+    <h1>Mi primera vista</h1>
+<p>{{ Ficha }}</p>
+
+{% block content %}
+<ul>
+    {% for categorias in Categoria %}
+    <li> {{ categorias.id }} / {{ categorias.nombre }} </li>
+    {% endfor %}
+    
+</ul>
+{% endblock %}
+
+</body>
+</html>

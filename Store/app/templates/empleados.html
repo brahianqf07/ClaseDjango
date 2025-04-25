@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+
+
+{% block content %}
+<ul>
+    {% for empleados in Empleado %}
+    <li> {{ empleados.id }} / {{ empleados.nombre }} </li>
+    {% endfor %}
+    
+</ul>
+{% endblock %}
